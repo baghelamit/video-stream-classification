@@ -1,5 +1,5 @@
 # Video Stream Processor
-Video Stream Processor processes kafka JSON messages using spark structured streaming. It uses OpenCV and TensorFlow libraries for video analytics and classification. This project requires following tools and technologies.
+Video Stream Processor processes kafka JSON messages using spark structured streaming. It uses OpenCV and TensorFlow libraries for video analytics and classification. This application uses pre-trained model (https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip) for image classification. It will process every 10th frame from stream and save the image with classification result in /tmp/processed-data folder. (Configured at "processed.output.dir" property in "stream-processor.properties" file) This project requires following tools and technologies.
 
 - JDK - 1.8
 - Maven - 3.3.9
